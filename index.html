@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daniel</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="keywords" content="Consultoria Engenharia">
+    <meta name="author" content="Beatriz Ribeiro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="pt-BR">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="menu" id="menu">
+      <img src="./img/Master-Fundo-Cinza.png" alt="logo" class="logo">
+      <span class="material-icons" id="burguer" onclick="clickmenu()">menu</span>
+      <ul id="itens">
+        <li id="links"><a href="Home">Home</a></li>
+        <li id="links"><a href="Consultoria">Consultoria</a></li>
+        <li id="links"><a href="Treinamento">Treinamento</a></li>
+        <li id="links"><a href="QuemSomos">Quem Somos</a></li>
+        <li id="links"><a href="Contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <article></article>
+
+    <footer>
+      <div class="footercontainer">
+        <div class="footerconteudo">
+        <h1>Daniel Cândido da Costa</h1>
+        <h3>Consultor Empresarial</h2>
+        </div>
+        <div class="footerconteudo">
+        <p>daniel.costa@rdmaster.com.br</p>
+        <p>31-99911-9398</p>
+        </div>
+      </div>
+    </footer>
+      <script>
+        function clickmenu() {
+          if (itens.style.display == 'grid') {
+            itens.style.display = 'none'
+          } else {
+            itens.style.display = 'grid'
+            itens.style.width = `${window.innerWidth}px`
+            itens.style.gridTemplateColumns = 'repeat(5, 1fr)'
+            itens.style.margin = '15px 0 5px'
+            itens.style.padding = '5px 0'
+            links.style.justifySelf = 'center'
+          }
+        }
+      </script>
+  </body>
+</html>
