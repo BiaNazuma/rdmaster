@@ -22,6 +22,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 3fr;
   padding: 10px;
+  z-index: 1;
 }
 
 .menu img {
@@ -34,6 +35,7 @@ img {
   text-decoration: none;
   color: #111;
   padding: 10px 5px;
+  font-size: 1.2rem;
 }
 
 .menu ul {
@@ -41,6 +43,7 @@ img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
+  margin-bottom: 0;
 }
 
 #burguer {
@@ -64,6 +67,19 @@ footer {
 
 .footerconteudo {
   text-align: center;
+  justify-items: center;
+}
+
+.footerconteudo a {
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerconteudo span {
+  color: black;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 700px) {
@@ -81,12 +97,20 @@ footer {
   .menu ul {
     display: none;
   }
+  .menu a {
+      font-size: 0.9rem;
+  }
+}
+
+.titulopagina {
+  padding-left: 30px;
 }
 
 .slide1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 30px;
+  padding-left: 30px;
 }
 
 .iconesslide1 {
@@ -95,6 +119,7 @@ footer {
   justify-items: center;
   align-items: center;
   padding-bottom: 30px;
+  text-align: justify;
 }
 
 .iconesslide1 img {
@@ -110,3 +135,30 @@ footer {
   justify-items: center;
 }
 
+.setasslide1 p {
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+@media (max-width: 700px) {
+  .slide1 {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+  .iconesslide1 p {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .iconesslide1 {
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 0;
+  }
+  .footercontainer {
+    gap: 10px;
+  }
+  .footerconteudo p {
+    word-break: break-all;
+    inline-size: 14ch;
+    margin: 0 auto;
+  }
+}
