@@ -1,9 +1,13 @@
 body {
   margin: 0;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 article {
-  height: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 100px;
 }
 
 img {
@@ -78,3 +82,31 @@ footer {
     display: none;
   }
 }
+
+.slide1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 30px;
+}
+
+.iconesslide1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.iconesslide1 img {
+  height: 100px;
+}
+
+.iconesslide1 h3 {
+  margin: 0;
+}
+
+.setasslide1 {
+  display: grid;
+  justify-items: center;
+}
+
