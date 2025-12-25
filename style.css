@@ -140,6 +140,11 @@ footer {
   padding: 5px;
 }
 
+.metasestrategicas {
+  width: 100%;
+  max-width: 1200px;
+}
+
 @media (max-width: 700px) {
   .slide1 {
     grid-template-columns: 1fr;
@@ -161,4 +166,35 @@ footer {
     inline-size: 14ch;
     margin: 0 auto;
   }
+}
+
+.nomeefoto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: right;
+  margin: 0 50px;
+}
+
+.quemsomosconteudo {
+  margin: 0 50px;
+}
+
+.quemsomosconteudo h1 h2 h3 p {
+  padding: 10px;
+  gap: 10px;
+}
+
+.quemsomosvalores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.quemsomosvalores span {
+  background-image: url(./img/whatsapp.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 30px;
+  font-size: 1.1rem;
 }

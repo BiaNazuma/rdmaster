@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RD Master</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="keywords" content="Consultoria Engenharia">
+    <meta name="author" content="Beatriz Ribeiro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="pt-BR">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="menu" id="menu">
+      <img src="./img/Master-Fundo-Cinza.png" alt="logo" class="logo">
+      <span class="material-icons" id="burguer" onclick="clickmenu()">menu</span>
+      <ul id="itens">
+        <li id="links"><a href="./index.html">Home</a></li>
+        <li id="links"><a href="Consultoria">Consultoria</a></li>
+        <li id="links"><a href="Treinamento">Treinamento</a></li>
+        <li id="links" class="linkativo"><a href="./quemsomos.html">Quem Somos</a></li>
+        <li id="links"><a href="Contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <article>
+        <div class="nomeefoto">
+        <img src="./img/Master-Fundo-Cinza.png" alt="">
+        <h1>Daniel Cândido<br> da Costa</h1>
+        </div>
+        <div class="quemsomosconteudo">
+        <h2>Formação em Engenharia Mecânica pela UFMG, pós graduação em Engenharia de Segurança do Trabalho e MBA – Gestão Estratégica de Negócios.</h2>
+        <p>Experiência em Sistemas de Gestão, atuando como consultor especialista nas áreas de Melhoria e Estabilidade de Processos, Gestão de Projetos, Gerenciamento de Manutenção, Desdobramento de Metas e Gestão Matricial de Despesas e Receitas. Experiência em projetos de empresas dos setores: empresas do setor de siderurgia, mineração, automobilístico, autopeças, papel e celulose, alimentos, energia, telecomunicações, saúde, transporte ferroviário, alimentos e bebidas, bens de consumo e serviços, químico/plástico, açúcar e álcool, entre outros..</p>
+        <h3>EXPERIÊNCIA e FORMAÇÃO</h3>
+        <p>Após mais de 28 anos na atuação em gestão de resultados em grandes, médias e pequenas organizações, tanto privadas quanto públicas, no Brasil e Exterior, agora estamos com o foco na melhoria de resultados de organizações, aplicando os princípios e práticas gerenciais, mais atuais e efetivadas para o seu negócio.</p>
+        <h3>MISSÃO e VISÃO</h3>
+        <p>Temos como MISSÃO: gerar valor com resultados focados para os clientes, atuando como parceira no planejamento e implementação dos processos e sistemas de gestão, de forma sustentável. Nossa VISÃO é ser referência nas soluções de gestão em que atua.</p>
+        <h3>VALORES</h3>
+        <div class="quemsomosvalores">
+        <span>Visão do Todo</span>
+        <span>Priorização e Agilidade</span>
+        <span>Pensamento LEAN*</span>
+        <span>Atuar no Desenvolvimento de Pessoas</span>
+        <span>Foco nos Resultados</span>
+        </div>
+        <p>*Pensamento “Enxuto”: é uma filosofia de gestão que visa identificar e eliminar desperdícios em todos os processos, focando na criação de valor para o cliente.</p>
+        </div>
+    </article>
+
+     <footer>
+      <div class="footercontainer">
+        <div class="footerconteudo">
+        <h1>Daniel Cândido da Costa</h1>
+        <h3>Consultor Empresarial</h2>
+        </div>
+        <div class="footerconteudo">
+        <p>daniel.costa@rdmaster.com.br</p>
+        <a href=""><img src="./img/whatsapp.svg" alt=""><span> (31) 99911-9398</span></a>
+        </div>
+      </div>
+    </footer>
+      <script>
+        function clickmenu() {
+          if (itens.style.display == 'grid') {
+            itens.style.display = 'none'
+          } else {
+            itens.style.display = 'grid'
+            itens.style.width = `${window.innerWidth}px`
+            itens.style.gridTemplateColumns = 'repeat(5, 1fr)'
+            itens.style.margin = '15px 0 5px'
+            itens.style.padding = '5px 0'
+            links.style.justifySelf = 'center'
+          }
+        }
+      </script>
+  </body>
+</html>
