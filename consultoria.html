@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quem Somos - RD Master</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="keywords" content="Consultoria Engenharia">
+    <meta name="author" content="Beatriz Ribeiro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="pt-BR">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="menu" id="menu">
+      <img src="./img/Master-Fundo-Cinza.png" alt="logo" class="logo">
+      <span class="material-icons" id="burguer" onclick="clickmenu()">menu</span>
+      <ul id="itens">
+        <li id="links"><a href="./index.html">Home</a></li>
+        <li id="links" class="linkativo"><a href="./consultoria.html">Consultoria</a></li>
+        <li id="links"><a href="Treinamento">Treinamento</a></li>
+        <li id="links"><a href="./quemsomos.html">Quem Somos</a></li>
+        <li id="links"><a href="Contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <article>
+        <h1>Formas de Atuação</h1>
+        <h2>COMO PODEMOS ATENDER À SUA ORGANIZAÇÃO</h2>
+        <div class="modalidadesconsultoria">
+        <div class="modalidadesmodulo">
+            <div>
+            <h3>PRESENCIAL</h3>
+            <p>Identificação e definição dos objetivos estratégicos da organização, sua visão, sua missão e seus valores. Também a definição de metas prioritárias e o seu alinhando para as diversas áreas da organização, e, o acompanhamento de resultados.</p>
+            </div>
+            <img src="./img/presencial.png" alt="">
+        </div>
+        <div class="modalidadesmodulo">
+            <div>
+            <h3>À DISTÂNCIA</h3>
+            <p>Identificação de indicadores até o nível operacional, alinhamento com as metas dos níveis superiores com o desdobramento de metas, visando alinhar os seus interesses com os objetivos da organização e o engajamentos das equipes.</p>
+            </div>
+            <img src="./img/distancia.png" alt="">
+        </div>
+        <div class="modalidadesmodulo">
+            <div>
+            <h3>MISTA: PRESENCIAL + À DISTÂNCIA</h3>
+            <p>Identificação e definição dos objetivos estratégicos da organização, sua visão, sua missão e seus valores. Também a definição de metas prioritárias e o seu alinhando para as diversas áreas da organização, e, o acompanhamento de resultados.</p>
+            </div>
+            <div class="modalidadesimg">
+                <img src="./img/presencial.png" alt="">
+                <span>+</span>
+                <img src="./img/distancia.png" alt="">
+            </div>
+        </div>
+        <div class="modalidadesreuniao">
+            <img src="./img/reuniao.jpg" alt="">
+            <p>Reunião de trabalho realizada na sala de comando de área produtiva industrial</p>
+        </div>
+        </div>
+    </article>
+
+    <footer>
+      <div class="footercontainer">
+        <div class="footerconteudo">
+        <h1>Daniel Cândido da Costa</h1>
+        <h3>Consultor Empresarial</h2>
+        </div>
+        <div class="footerconteudo">
+        <p>daniel.costa@rdmaster.com.br</p>
+        <a href="https://wa.me/5531999119398"><img src="./img/whatsapp.svg" alt=""><span> (31) 99911-9398</span></a>
+        </div>
+      </div>
+    </footer>
+      <script>
+        function clickmenu() {
+          if (itens.style.display == 'grid') {
+            itens.style.display = 'none'
+          } else {
+            itens.style.display = 'grid'
+            itens.style.width = `${window.innerWidth}px`
+            itens.style.gridTemplateColumns = 'repeat(5, 1fr)'
+            itens.style.margin = '15px 0 5px'
+            itens.style.padding = '5px 0'
+            links.style.justifySelf = 'center'
+          }
+        }
+      </script>
+  </body>
+</html>
