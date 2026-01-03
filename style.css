@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 20px;
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
@@ -7,7 +7,7 @@ article {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  padding-top: 100px;
+  padding: 100px 10px 10px;
 }
 
 img {
@@ -120,26 +120,6 @@ footer {
   margin: 0;
 }
 
-@media (max-width: 700px) {
-  #burguer {
-    display: block;
-    padding: 20px;
-    align-self: center;
-    justify-self: right;
-    margin: 0 30px;
-  }
-  #burguer:hover {
-    color: white;
-    cursor: pointer;
-  }
-  .menu ul {
-    display: none;
-  }
-  .menu a {
-      font-size: 0.9rem;
-  }
-}
-
 .titulopagina {
   padding-left: 30px;
 }
@@ -182,29 +162,6 @@ footer {
   width: 100%;
   max-width: 1200px;
   margin-bottom: 30px;
-}
-
-@media (max-width: 700px) {
-  .slide1 {
-    grid-template-columns: 1fr;
-    padding: 25px;
-  }
-  .iconesslide1 p {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-  .iconesslide1 {
-    grid-template-columns: 1fr 2fr;
-    padding-bottom: 0;
-  }
-  .footercontainer {
-    gap: 10px;
-  }
-  .footerconteudo p {
-    word-break: break-all;
-    inline-size: 14ch;
-    margin: 0 auto;
-  }
 }
 
 .nomeefoto {
@@ -268,7 +225,77 @@ footer {
   border-radius: 5px;
 }
 
+.perfil {
+  height: 150px;
+  border-radius: 5px;
+  align-content: center;
+  margin: 0 30px;
+}
+
+.solucoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+}
+
+.solucoesmodulos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  margin: 10px;
+}
+
+.gestoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 15px;
+}
+
 @media (max-width: 700px) {
+  #burguer {
+    display: block;
+    padding: 20px;
+    align-self: center;
+    justify-self: right;
+    margin: 0 30px;
+  }
+  #burguer:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu a {
+      font-size: 0.9rem;
+  }
+    .slide1 {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+  .iconesslide1 p {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .iconesslide1 {
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 0;
+  }
+  .footercontainer {
+    gap: 10px;
+  }
+  .footerconteudo p {
+    word-break: break-all;
+    inline-size: 14ch;
+    margin: 0 auto;
+  }
+
+  .modalidadesconsultoria {
+    grid-template-columns: 1fr;
+  }
+
   .modalidadesmodulo {
     grid-template-columns: 1fr;
   }
@@ -280,11 +307,20 @@ footer {
   .modalidadesimg {
     display: none;
   }
-}
 
-.perfil {
-  height: 150px;
-  border-radius: 5px;
-  align-content: center;
-  margin: 0 30px;
+  .solucoes {
+    grid-template-columns: 1fr;
+  }
+  
+  .solucoesmodulos {
+    grid-template-columns: 1fr;
+  }
+
+  .solucoesmodulos img {
+    display: none;
+  }
+
+  .gestoes {
+    grid-template-columns: 1fr;
+  }
 }
